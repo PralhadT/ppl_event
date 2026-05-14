@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Premier League (PPL) | AI&DSSA</title>
+    <meta name="description" content="Placement Premier League (PPL) organised by AI&DS Student's Association (AI&DSSA) of CSMSS Chh. Shahu College of Engineering. Compete, Conquer, Get Placed!">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Particles Canvas -->
+    <canvas id="particles"></canvas>
+    
+    <!-- Navbar -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="glow-text">PPL</span> <span class="year">2026</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rounds">Rounds</a></li>
+                <li><a href="#details">Event Details</a></li>
+                <li><a href="#coordinators">Coordinators</a></li>
+                <li><a href="https://forms.gle/AAshWuisHTPNekrq7" target="_blank" class="nav-cta">Register</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <div class="collaborators">
+                <p>Organised by <strong>AI&DS Student's Association (AI&DSSA)</strong></p>
+                <p>In Collaboration with <strong>ISTE</strong></p>
+            </div>
+            <h1 class="main-title glitch" data-text="PLACEMENT PREMIER LEAGUE">PLACEMENT <br> PREMIER LEAGUE <span class="highlight">(PPL)</span></h1>
+            <h2 class="subtitle">Compete, Conquer, Get Placed</h2>
+            <p class="college-name">CSMSS Chh. Shahu College of Engineering</p>
+            
+            <div class="hero-buttons">
+                <a href="https://forms.gle/AAshWuisHTPNekrq7" target="_blank" class="btn btn-primary glow-btn">
+                    <i class="fas fa-rocket"></i> Register Now
+                </a>
+                <a href="#rounds" class="btn btn-secondary">
+                    <i class="fas fa-compass"></i> Explore Event
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poster Section -->
+    <section id="poster" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Event <span class="highlight">Poster</span></h2>
+            <div class="poster-container glass-card glow-border">
+                <!-- User can replace src with their actual poster path -->
+                <img src="assets/eventPoster.jpeg" alt="PPL Event Poster" id="event-poster" >
+                <div class="poster-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">About the <span class="highlight">Event</span></h2>
+            <div class="about-grid">
+                <div class="glass-card about-card">
+                    <i class="fas fa-bullseye card-icon"></i>
+                    <h3>Objective</h3>
+                    <p>Placement Premier League (PPL) is a placement preparation competition designed to simulate real placement rounds and enhance students' aptitude, communication, technical, analytical, and interview skills.</p>
+                </div>
+                <div class="glass-card about-card">
+                    <i class="fas fa-trophy card-icon"></i>
+                    <h3>The Challenge</h3>
+                    <p>Participants compete through multiple elimination rounds including aptitude, memory sharpening, group discussion, technical quiz, and HR interview rounds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elimination Notice -->
+    <section class="elimination-notice reveal">
+        <div class="warning-banner">
+            <i class="fas fa-exclamation-triangle"></i>
+            <h3>Elimination Rounds — Only the best moves forward!</h3>
+            <i class="fas fa-exclamation-triangle"></i>
+        </div>
+    </section>
+
+    <!-- Rounds Timeline Section -->
+    <section id="rounds" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Event <span class="highlight">Rounds</span></h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot">1</div>
+                    <div class="timeline-content glass-card">
+                        <div class="round-header">
+                            <i class="fas fa-brain round-icon"></i>
+                            <h4>BrainBuster Apti Clash</h4>
+                        </div>
+                        <h5>APTITUDE ROUND</h5>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot">2</div>
+                    <div class="timeline-content glass-card">
+                        <div class="round-header">
+                            <i class="fas fa-memory round-icon"></i>
+                            <h4>MindSprint: Memory Matrix</h4>
+                        </div>
+                        <h5>MEMORY SHARPENING GAME</h5>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">3</div>
+                    <div class="timeline-content glass-card">
+                        <div class="round-header">
+                            <i class="fas fa-users round-icon"></i>
+                            <h4>ThinkTank Session</h4>
+                        </div>
+                        <h5>GD ROUND</h5>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">4</div>
+                    <div class="timeline-content glass-card">
+                        <div class="round-header">
+                            <i class="fas fa-laptop-code round-icon"></i>
+                            <h4>Tech Titans Showdown</h4>
+                        </div>
+                        <h5>TECHNICAL QUIZ</h5>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">5</div>
+                    <div class="timeline-content glass-card">
+                        <div class="round-header">
+                            <i class="fas fa-user-tie round-icon"></i>
+                            <h4>The Final Hire</h4>
+                        </div>
+                        <h5>HR INTERVIEW ROUND</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details & Prizes -->
+    <section id="details" class="section details-prizes-section">
+        <div class="container">
+            <div class="split-grid">
+                <!-- Details -->
+                <div class="details-wrapper reveal">
+                    <h2 class="section-title">Event <span class="highlight">Details</span></h2>
+                    <div class="details-grid">
+                        <div class="detail-card glass-card">
+                            <i class="far fa-calendar-alt"></i>
+                            <h4>Date</h4>
+                            <p>May 15 2026, Friday</p>
+                        </div>
+                        <div class="detail-card glass-card">
+                            <i class="fas fa-ticket-alt"></i>
+                            <h4>Registration Fees</h4>
+                            <p>Rs. 30/-</p>
+                        </div>
+                        <div class="detail-card glass-card venue-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4>Venue</h4>
+                            <p>Department of Artificial Intelligence & Data Science, 4th Floor B Building</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prizes -->
+                <div class="prize-wrapper reveal">
+                    <div class="prize-card glass-card premium-glow">
+                        <div class="prize-icon-wrapper">
+                            <i class="fas fa-award"></i>
+                            <i class="fas fa-rupee-sign floating-coin"></i>
+                        </div>
+                        <h3>Win Cash Prizes</h3>
+                        <p>Participate, conquer the rounds, and win exciting cash rewards!</p>
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coordinators Section -->
+    <section id="coordinators" class="section">
+        <div class="container reveal">
+            <h2 class="section-title">Event <span class="highlight">Coordinators</span></h2>
+            <div class="coordinators-grid">
+                <!-- Coordinator 1 -->
+                <div class="coordinator-card glass-card">
+                    <div class="coord-avatar">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <h3>Varad Kulkarni</h3>
+                    <p class="role">Event Coordinator</p>
+                    <div class="contact-actions">
+                        <a href="tel:+918237377080" class="contact-btn call-btn">
+                            <i class="fas fa-phone-alt"></i> Call
+                        </a>
+                        <a href="https://wa.me/918237377080?text=Hello%20I%20want%20information%20about%20Placement%20Premier%20League%20(PPL)" target="_blank" class="contact-btn wa-btn">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coordinator 2 -->
+                <div class="coordinator-card glass-card">
+                    <div class="coord-avatar">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <h3>Kruti Patel</h3>
+                    <p class="role">Event Coordinator</p>
+                    <div class="contact-actions">
+                        <a href="tel:+919272112645" class="contact-btn call-btn">
+                            <i class="fas fa-phone-alt"></i> Call
+                        </a>
+                        <a href="https://wa.me/919272112645?text=Hello%20I%20want%20information%20about%20Placement%20Premier%20League%20(PPL)" target="_blank" class="contact-btn wa-btn">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta section">
+        <div class="container reveal text-center">
+            <h2 class="cta-title">Ready to Compete and Get Placed?</h2>
+            <p>Don't miss out on this opportunity to test your skills.</p>
+            <a href="https://forms.gle/AAshWuisHTPNekrq7" target="_blank" class="btn btn-primary glow-btn pulse-animation mt-4">
+                <i class="fas fa-paper-plane"></i> Register Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-brand">
+                <h3>PPL 2026</h3>
+                <p>Organised by AI&DS Student's Association (AI&DSSA)</p>
+                <p>In Collaboration with ISTE</p>
+                <p class="college-footer">CSMSS Chh. Shahu College of Engineering</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rounds">Rounds</a></li>
+                    <li><a href="#details">Details</a></li>
+                    <li><a href="#coordinators">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/ai.and.ds_association.csmss?igsh=NXp3czB6aTg4aXZh" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AI&DSSA, CSMSS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
